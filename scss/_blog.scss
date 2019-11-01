@@ -41,8 +41,11 @@
             bottom: 0;
             padding: 1em 0;
             background: rgba(255, 255, 255, .9);
-            background: $primary;
-            opacity: 0;
+            background: $secondary;
+            opacity: .7;
+            .price {
+                background: $primary;
+            }
 
             @include transition(.6s);
 
@@ -78,14 +81,6 @@
 
         &:hover,
         &:focus {
-            .text {
-                opacity: 1;
-
-                .price {
-                    background: $primary;
-                }
-            }
-
             .icon {
                 bottom: 50%;
                 opacity: 1;

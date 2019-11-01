@@ -8,14 +8,11 @@
         color: black;
     }
 
-    .important {
-        color: $primary;
-        font-weight: bold;
-    }
-
-    important-b {
-        color: black;
-        font-weight: bold;
+    b {
+        color: $dark;
+		background-color: $gold;
+		font-weight: bold;
+		border-radius: 2px;
     }
 
     img {

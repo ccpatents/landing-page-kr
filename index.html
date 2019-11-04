@@ -10,14 +10,16 @@
   <meta name="author" content="JoonDong" />
   <meta name="keywords" content="특허, 키프리스, 검색식, 연산자, 구글 특허, 미국 특허, 일본 특허, 중국 특허, CCPatents">
   <meta name="subject" content="키프리스 특허 검색식 자동 완성" />
-  <meta name="description" content="키프리스 검색식을 클릭 몇 번으로 만들 수 있습니다. 더 이상 귀찮은 연산자,괄호 신경쓸 필요가 없습니다. 생성된 검색식으로 즉시 검색을 수행합니다. 또한 구글 특허, USPTO, Espacenet 검색식으로 즉시 변경 가능합니다." />
+  <meta name="description"
+    content="키프리스 검색식을 클릭 몇 번으로 만들 수 있습니다. 더 이상 귀찮은 연산자,괄호 신경쓸 필요가 없습니다. 생성된 검색식으로 즉시 검색을 수행합니다. 또한 구글 특허, USPTO, Espacenet 검색식으로 즉시 변경 가능합니다." />
   <meta name="copyright" content="Copyright 2019. JoonDong. All rights reserved." />
   <meta property="og:title" content="키프리스 특허 검색식 자동 완성" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.ccpatents" />
   <meta property="og:image" content="https://www.ccpatents.net/icon.png?v=1" />
   <meta property="og:site_name" content="CCPatents" />
-  <meta property="og:description" content="키프리스 검색식을 클릭 몇 번으로 만들 수 있습니다. 더 이상 귀찮은 연산자,괄호 신경쓸 필요가 없습니다. 생성된 검색식으로 즉시 검색을 수행합니다. 또한 구글 특허, USPTO, Espacenet 검색식으로 즉시 변경 가능합니다." />
+  <meta property="og:description"
+    content="키프리스 검색식을 클릭 몇 번으로 만들 수 있습니다. 더 이상 귀찮은 연산자,괄호 신경쓸 필요가 없습니다. 생성된 검색식으로 즉시 검색을 수행합니다. 또한 구글 특허, USPTO, Espacenet 검색식으로 즉시 변경 가능합니다." />
 
   <title>CCPatents</title>
 
@@ -45,23 +47,32 @@
     href="https://fonts.googleapis.com/css?family=Gothic+A1|Merriweather+Sans:400,700|Merriweather:400,300,300italic,400italic,700,700italic&display=swap"
     rel="stylesheet">
 
-    <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '461691108031344');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=461691108031344&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '461691108031344');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=461691108031344&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
 
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -178,13 +189,16 @@
               aria-controls="v-pills-1" aria-selected="true"><span class="mr-3 flaticon-ideas"></span> 직관성</a>
 
             <a class="nav-link px-4" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
-              aria-controls="v-pills-2" aria-selected="false"><span class="mr-3 flaticon-flasks"></span> 동의어 사전</a>
+              aria-controls="v-pills-2" aria-selected="false"><span class="mr-3 flaticon-flasks"></span> 상표 검색 (new)</a>
 
             <a class="nav-link px-4" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
+              aria-controls="v-pills-2" aria-selected="false"><span class="mr-3 flaticon-flasks"></span> 동의어 사전</a>
+
+            <a class="nav-link px-4" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
               aria-controls="v-pills-3" aria-selected="false"><span class="mr-3 flaticon-analysis"></span> 다양한 플랫폼
               지원</a>
 
-            <a class="nav-link px-4" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
+            <a class="nav-link px-4" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab"
               aria-controls="v-pills-4" aria-selected="false"><span class="mr-3 flaticon-web-design"></span> 향상된
               검색기록</a>
 
@@ -211,8 +225,17 @@
             </div>
 
             <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+              <h2 class="mb-4"><span class="divider-v">|</span><span> 상표 검색</span></h2>
+              <img class="col-lg-12 img-fluid popup-img" src="img/features/2.png" alt="상표 검색">
+              <p class=" text-wave-h" style="font-size: 12px">이미지를 클릭하여 확대할 수 있습니다.</p>
+              <p><b>상표 검색에도 검색식이 사용</b>된다는 걸 알고 계신가요?</p>
+              <p><b>권리범위가 가장 넓은 문자상표</b>의 경우, 비슷한 소리만 나도 침해가 될 수 있기 때문에, <b>동음어를 사용</b>하여 검색해야 합니다.</p>
+              <p>CCPatents는 <b>키프리스의 상표 검색식을 생성</b>할 수 있고, '특허 검색' 버튼을 누르면, 특허 검색과 마찬가지로 <b>즉시 검색 결과가 브라우저에 표시</b>됩니다.</p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
               <h2 class="mb-4"><span class="divider-v">|</span><span> 동의어 사전</span></h2>
-              <img class="col-lg-12 img-fluid popup-img" src="img/features/2.png" alt="동의어 데이터베이스 구성">
+              <img class="col-lg-12 img-fluid popup-img" src="img/features/3.png" alt="동의어 데이터베이스 구성">
               <p class=" text-wave-h" style="font-size: 12px">이미지를 클릭하여 확대할 수 있습니다.</p>
               <p>
                 CCPatents는 워드넷과 키프리스 동의어 사전을 내장하고 있지만, <b>원하는 동의어가 자동으로 검색되지 않거나,
@@ -227,10 +250,10 @@
               <!--<p><a href="#" class="btn btn-primary px-3 py-2">More</a></p>-->
             </div>
 
-            <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+            <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
               <h2 class="mb-4"><span class="divider-v">|</span><span> 다양한 플랫폼 지원</span></h2>
               <div class="col-lg-12 d-flex justify-content-center mb-4">
-                <img class="img-fluid popup-img" src="img/features/3.png" alt="키프리스, 구글 특허, USPTO, Espacnet, J-PlatPat">
+                <img class="img-fluid popup-img" src="img/features/4.png" alt="키프리스, 구글 특허, USPTO, Espacnet, J-PlatPat">
               </div>
               <p>미국, 한국, 일본 등 세계 주요국의 특허청은 모두 특허 검색 서비스를 제공하고 있습니다.</p>
               <p>미국의 경우 USPTO이고, 한국은 그 유명한 <b>키프리스</b>가 있습니다.</p>
@@ -243,14 +266,14 @@
               <!--<p><a href="#" class="btn btn-primary px-3 py-2">More</a></p>-->
             </div>
 
-            <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+            <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
               <h2 class="mb-4"><span class="divider-v">|</span><span> 향상된 검색기록</span></h2>
               <div class="row">
                 <div class="col-lg-6">
-                  <img class="img-fluid popup-img" src="img/features/4.png" alt="검색 기록">
+                  <img class="img-fluid popup-img" src="img/features/5.png" alt="검색 기록">
                 </div>
                 <div class="col-lg-6">
-                  <img class="img-fluid popup-img" src="img/features/5.png" alt="검색 기록">
+                  <img class="img-fluid popup-img" src="img/features/6.png" alt="검색 기록">
                 </div>
               </div>
               <p class="text-right mt-2 text-wave-h" style="font-size: 12px">이미지를 클릭하여 확대할 수 있습니다.</p>

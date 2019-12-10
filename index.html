@@ -7,9 +7,6 @@
   <script>
     var lang = (navigator.language || navigator.userLanguage).substring(0, 2);
     switch (lang) {
-      case "en":
-        window.location.href = "https://en.ccpatents.net";
-        break;
       case "ko":
         window.location.href = "https://kr.ccpatents.net";
         break;
@@ -17,6 +14,7 @@
         window.location.href = "https://jp.ccpatents.net";
         break;
       default:
+        window.location.href = "https://en.ccpatents.net";
     }
   </script>
 
